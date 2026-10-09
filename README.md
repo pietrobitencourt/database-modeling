@@ -7,12 +7,8 @@
 
 ![BRModelo](https://img.shields.io/badge/BRModelo-DER-1F6FEB?style=for-the-badge)
 ![ER Diagrams](https://img.shields.io/badge/Diagramas_ER-conceitual-4C9F70?style=for-the-badge)
-
-<!--
-Descomente os badges abaixo conforme as tecnologias forem sendo usadas:
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![MySQL Workbench](https://img.shields.io/badge/MySQL_Workbench-00758F?style=for-the-badge&logo=mysql&logoColor=white)
--->
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Last commit](https://img.shields.io/github/last-commit/pietrobitencourt/database-modeling)
@@ -38,7 +34,7 @@ Descomente os badges abaixo conforme as tecnologias forem sendo usadas:
 
 Este repositório reúne as atividades práticas que desenvolvo na disciplina de **Modelagem de Dados**. Cada atividade fica em uma pasta própria, numerada na ordem em que foi feita, com seu próprio README.
 
-O objetivo é documentar minha evolução na modelagem de bancos de dados, do modelo conceitual (DER) às próximas etapas, que incluem scripts em MySQL. O repositório continua crescendo: novas atividades entram em pastas numeradas (`02-...`, `03-...`) conforme a disciplina avança.
+O objetivo é documentar minha evolução na modelagem de bancos de dados, do modelo conceitual (DER) à implementação em MySQL com scripts DDL. O repositório continua crescendo: novas atividades entram em pastas numeradas (`03-...`, `04-...`) conforme a disciplina avança.
 
 ### Contexto acadêmico
 
@@ -53,15 +49,26 @@ O objetivo é documentar minha evolução na modelagem de bancos de dados, do mo
 | # | Atividade | Descrição | Ferramenta | Pasta |
 |---|-----------|-----------|------------|-------|
 | 01 | **Lista MER** | 11 diagramas entidade-relacionamento, de relacionamentos básicos a cenários completos (berçário, floricultura, escola, biblioteca, firma de limpeza e empresa de projetos). | BRModelo 3 | [Abrir pasta](./01-lista-mer-der) |
+| 02 | **Sistema de Reserva de Carros (DDL)** | Banco de dados da locadora ACDN Rental Car, a partir do artigo da SQL Magazine nº 74: 5 tabelas e 7 chaves estrangeiras, apenas comandos DDL, com correção dos erros do código original. | MySQL, MySQL Workbench | [Abrir pasta](./02-reserva-carros-ddl) |
 
-**Em breve:** atividades com scripts em MySQL, na mesma estrutura de pastas numeradas.
+**Em breve:** novas atividades, na mesma estrutura de pastas numeradas.
 
-### O que a atividade 01 pratica
+### O que as atividades praticam
+
+**01 · Lista MER**
 
 - Identificação de entidades, atributos e identificadores a partir de um texto
 - Relacionamentos 1:1, 1:N e N:N, com cardinalidade mínima e máxima
 - Atributos de relacionamento e auto-relacionamento
 - Entrega em dois formatos: arquivo editável (`.brM3`) e imagem (`.png`)
+
+**02 · Sistema de Reserva de Carros (DDL)**
+
+- Do modelo lógico ao modelo físico: tradução de um diagrama de classes UML para tabelas MySQL
+- Comandos DDL: `CREATE DATABASE`, `CREATE TABLE` e `ALTER TABLE ... ADD CONSTRAINT`
+- Chaves primárias e estrangeiras, tipos de dados (`DECIMAL`, `INT UNSIGNED`, `DATE`) e restrições (`NOT NULL`, `UNIQUE`)
+- Análise e correção de código com erros publicado em uma revista técnica
+- Validação com `SHOW TABLES`, `DESCRIBE` e `SHOW CREATE TABLE`
 
 ### Estrutura do repositório
 
@@ -69,20 +76,28 @@ O objetivo é documentar minha evolução na modelagem de bancos de dados, do mo
 database-modeling/
 ├── README.md
 ├── LICENSE
-└── 01-lista-mer-der/
+├── 01-lista-mer-der/
+│   ├── README.md
+│   ├── 11 pastas, uma por diagrama (.brM3 e .png)
+│   └── docs/
+│       └── lista-mer-modelos.pdf
+└── 02-reserva-carros-ddl/
     ├── README.md
-    ├── 11 pastas, uma por diagrama (.brM3 e .png)
+    ├── acdn_rental_car.sql
     └── docs/
-        └── lista-mer-modelos.pdf
+        └── screenshots/
 ```
 
 ### Como usar
 
 Os arquivos `.png` podem ser vistos direto no GitHub. Os arquivos `.brM3` são os modelos editáveis e abrem no **BRModelo 3**, uma ferramenta gratuita de modelagem. A convenção usada para ler a cardinalidade está explicada no [README da atividade 01](./01-lista-mer-der#pt-br).
 
+O script da atividade 02 roda em qualquer cliente MySQL (MySQL Workbench ou terminal). As instruções de execução e validação estão no [README da atividade 02](./02-reserva-carros-ddl).
+
 ### Observações
 
-- Os enunciados das listas são da professora e aparecem apenas resumidos. Os modelos são de minha autoria.
+- Os enunciados das listas são da professora e aparecem apenas resumidos. Os modelos e os scripts são de minha autoria.
+- A atividade 02 é baseada no artigo "Modelando um Sistema de Reserva de Carros" (SQL Magazine, edição 74). O código implementado corrige os erros do original, como detalhado no README da atividade.
 - A licença MIT cobre o conteúdo deste repositório.
 
 ### Autor
@@ -106,7 +121,7 @@ Distribuído sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais d
 
 This repository collects the hands-on assignments I build in my **Data Modeling** class. Each assignment lives in its own numbered folder, in the order it was completed, with its own README.
 
-The goal is to document my progress in database modeling, from the conceptual model (ERD) to the next steps, which include MySQL scripts. The repository keeps growing: new assignments are added in numbered folders (`02-...`, `03-...`) as the class moves forward.
+The goal is to document my progress in database modeling, from the conceptual model (ERD) to the implementation in MySQL with DDL scripts. The repository keeps growing: new assignments are added in numbered folders (`03-...`, `04-...`) as the class moves forward.
 
 ### Academic context
 
@@ -115,22 +130,32 @@ The goal is to document my progress in database modeling, from the conceptual mo
 | **Institution** | Centro Universitário do Distrito Federal (UDF), Brasília, Brazil |
 | **Program** | Computer Science |
 | **Course** | Data Modeling |
-| **Instructor** | MsC Josyane Lannes Florenzano de Souza |
 
 ### Assignments
 
 | # | Assignment | Description | Tool | Folder |
 |---|------------|-------------|------|--------|
 | 01 | **ER Diagram list** | 11 entity-relationship diagrams, from basic relationships to full scenarios (nursery, flower shop, school, library, cleaning products company and project company). | BRModelo 3 | [Open folder](./01-lista-mer-der) |
+| 02 | **Car Reservation System (DDL)** | Database of the ACDN Rental Car company, based on the SQL Magazine article no. 74: 5 tables and 7 foreign keys, DDL statements only, fixing the errors in the original code. | MySQL, MySQL Workbench | [Open folder](./02-reserva-carros-ddl) |
 
-**Coming soon:** assignments with MySQL scripts, in the same numbered folder structure.
+**Coming soon:** new assignments, in the same numbered folder structure.
 
-### What assignment 01 practices
+### What the assignments practice
+
+**01 · ER Diagram list**
 
 - Identifying entities, attributes and identifiers from a text description
 - 1:1, 1:N and N:N relationships, with minimum and maximum cardinality
 - Relationship attributes and self-relationships
 - Delivered in two formats: editable file (`.brM3`) and image (`.png`)
+
+**02 · Car Reservation System (DDL)**
+
+- From logical to physical model: translating a UML class diagram into MySQL tables
+- DDL statements: `CREATE DATABASE`, `CREATE TABLE` and `ALTER TABLE ... ADD CONSTRAINT`
+- Primary and foreign keys, data types (`DECIMAL`, `INT UNSIGNED`, `DATE`) and constraints (`NOT NULL`, `UNIQUE`)
+- Analyzing and fixing faulty code published in a technical magazine
+- Validation with `SHOW TABLES`, `DESCRIBE` and `SHOW CREATE TABLE`
 
 ### Repository structure
 
@@ -140,9 +165,12 @@ See the tree in the Portuguese section above.
 
 The `.png` files can be viewed right on GitHub. The `.brM3` files are the editable models and open in **BRModelo 3**, a free modeling tool. The convention used to read cardinality is explained in the [assignment 01 README](./01-lista-mer-der#en).
 
+The assignment 02 script runs on any MySQL client (MySQL Workbench or command line). Run and validation instructions are in the [assignment 02 README](./02-reserva-carros-ddl#english).
+
 ### Notes
 
-- The exercise statements belong to the instructor and are only summarized here. The models are my own work.
+- The exercise statements belong to the instructor and are only summarized here. The models and scripts are my own work.
+- Assignment 02 is based on the article "Modelando um Sistema de Reserva de Carros" (SQL Magazine, issue 74). The implemented code fixes the errors of the original, as detailed in the assignment's README.
 - The MIT license covers the content of this repository.
 
 ### Author
