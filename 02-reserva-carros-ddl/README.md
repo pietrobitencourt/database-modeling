@@ -26,7 +26,6 @@
 | **Estudante** | Piêtro Bitencourt Nunes |
 | **Instituição** | Centro Universitário do Distrito Federal (UDF) |
 | **Disciplina** | Modelagem de Banco de Dados |
-| **Professora** | MsC Josyane Lannes Florenzano de Souza |
 | **Tipo de trabalho** | Individual |
 | **SGBD** | MySQL |
 | **Fonte** | Artigo "Modelando um Sistema de Reserva de Carros", SQL Magazine, edição 74 |
@@ -153,7 +152,6 @@ NETO, Arilo Claudio Dias. **Modelando um Sistema de Reserva de Carros**. *SQL Ma
 | **Student** | Piêtro Bitencourt Nunes |
 | **Institution** | Centro Universitário do Distrito Federal (UDF) |
 | **Course** | Database Modeling (*Modelagem de Banco de Dados*) |
-| **Professor** | MsC Josyane Lannes Florenzano de Souza |
 | **Type of work** | Individual |
 | **DBMS** | MySQL |
 | **Source** | Article "Modelando um Sistema de Reserva de Carros" (Modeling a Car Reservation System), SQL Magazine, issue 74 |
