@@ -43,6 +43,7 @@ O objetivo é documentar minha evolução na modelagem de bancos de dados, do mo
 | **Instituição** | Centro Universitário do Distrito Federal (UDF), Brasília - DF |
 | **Curso** | Ciência da Computação |
 | **Disciplina** | Modelagem de Dados |
+| **Professora** | MsC Josyane Lannes Florenzano de Souza |
 
 ### Atividades
 
@@ -130,6 +131,7 @@ The goal is to document my progress in database modeling, from the conceptual mo
 | **Institution** | Centro Universitário do Distrito Federal (UDF), Brasília, Brazil |
 | **Program** | Computer Science |
 | **Course** | Data Modeling |
+| **Instructor** | MsC Josyane Lannes Florenzano de Souza |
 
 ### Assignments
 
