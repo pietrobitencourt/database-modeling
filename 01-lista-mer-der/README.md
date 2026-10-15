@@ -32,6 +32,7 @@
 | **Instituição** | Centro Universitário do Distrito Federal (UDF), Brasília - DF |
 | **Curso** | Ciência da Computação |
 | **Disciplina** | Modelagem de Dados |
+| **Professora** | MsC Josyane Lannes Florenzano de Souza |
 | **Atividade** | Lista MER, Partes I a VII (entrega individual) |
 | **Ferramenta** | BRModelo 3 |
 
