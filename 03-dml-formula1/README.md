@@ -186,11 +186,11 @@ As tabelas foram criadas na ordem das dependências (`paises` → `equipes` → 
 
 | Integrante | GitHub |
 |---|---|
-| Bernardo Kopp Pinheiro | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
-| Gabriel Valois Rodrigues | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
-| Pedro Henrique Lima dos Santos Mota | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
+| Bernardo Kopp Pinheiro | [@bernardokoppdev](https://github.com/bernardokoppdev) |
+| Gabriel Valois Rodrigues | [@valoardev](https://github.com/valoardev) |
+| Pedro Henrique Lima dos Santos Mota | [@pedrohenrmt](https://github.com/pedrohenrmt) |
 | Piêtro Bitencourt Nunes | [@pietrobitencourt](https://github.com/pietrobitencourt) |
-| Zamorano Fragoso de Sousa | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
+| Zamorano Fragoso de Sousa | [@zamfs](https://github.com/zamfs) |
 
 ---
 
@@ -365,8 +365,8 @@ Tables were created in dependency order (`paises` → `equipes` → `pilotos` �
 
 | Member | GitHub |
 |---|---|
-| Bernardo Kopp Pinheiro | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
-| Gabriel Valois Rodrigues | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
-| Pedro Henrique Lima dos Santos Mota | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
+| Bernardo Kopp Pinheiro | [@bernardokoppdev](https://github.com/bernardokoppdev) |
+| Gabriel Valois Rodrigues | [@valoardev](https://github.com/valoardev) |
+| Pedro Henrique Lima dos Santos Mota | [@pedrohenrmt](https://github.com/pedrohenrmt) |
 | Piêtro Bitencourt Nunes | [@pietrobitencourt](https://github.com/pietrobitencourt) |
-| Zamorano Fragoso de Sousa | [@USUARIO-GITHUB](https://github.com/USUARIO-GITHUB) |
+| Zamorano Fragoso de Sousa | [@zamfs](https://github.com/zamfs) |
